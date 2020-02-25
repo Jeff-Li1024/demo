@@ -1,0 +1,15 @@
+#开发环境
+#数据源配置spring:
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?characterEncoding=utf8&serverTimezone=UTC&useUnicode=true
+    username: root
+    password: 1234
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:static/mapper/*Mapper.xml
+  type-aliases-package: com.lxh.demo.entity

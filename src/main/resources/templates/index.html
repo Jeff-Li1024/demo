@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+    </head>
+
+    <body>
+
+    <form action="/user/save">
+        <input type="hidden" name="id"/>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <button type="submit" th:text="提交"/>
+    </form>
+
+    </body>
+</html>
