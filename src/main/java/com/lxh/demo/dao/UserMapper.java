@@ -14,6 +14,8 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    void saveUser(User user);
+    User findUserByName(String name);
+
+    User findUserById(Integer id);
 
 }

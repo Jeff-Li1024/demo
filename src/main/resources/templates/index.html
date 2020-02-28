@@ -1,20 +1,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
-        <title>index</title>
+        <title>登录页面</title>
     </head>
 
     <body>
-
-    <form action="/user/save">
-        <input type="hidden" name="id"/>
-        <tr>
-            <td>姓名：</td>
-            <td><input type="text" name="name"></td>
-        </tr>
-        <button type="submit" th:text="提交"/>
+    <h3>登录</h3>
+    <div style="color: red" th:text="${msg}"></div>
+    <form method="post" action="/shiro/login">
+        用户名:<input type="text" name="name"/><br/>
+        密码：<input type="password" name="password"/><br/>
+        <input type="submit" value="登录"/>
     </form>
-
-
     </body>
+
 </html>

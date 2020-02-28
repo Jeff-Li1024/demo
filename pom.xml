@@ -73,6 +73,20 @@
 			<version>1.1.10</version>
 		</dependency>
 
+		<!--shiro支持-->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+		<!-- thymeleaf对shiro的扩展支持 -->
+		<dependency>
+			<groupId>com.github.theborakompanioni</groupId>
+			<artifactId>thymeleaf-extras-shiro</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+
+
 		<!--热加载 热部署-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
